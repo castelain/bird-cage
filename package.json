@@ -134,7 +134,12 @@
     ]
   },
   "babel": {
-    "plugins": ["babel-plugin-transform-decorators-legacy"],
+    "plugins": [
+      [
+        "@babel/plugin-proposal-decorators", 
+        { "legacy": true }
+      ]
+    ],
     "presets": [
       "react-app"
     ]
